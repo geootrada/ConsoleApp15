@@ -12,14 +12,18 @@ namespace ConsoleApp15
         {
             int number;
             int sum = 0;
+            int lower = 0;
+            int upper = 100;
+            int multiple1 = 3;
+            int multiple2 = 5;
 
-            Random rand = new Random();
-            number = rand.Next(0, 100);
+            Random random = new Random();
+            number = random.Next(lower, upper);
             Console.WriteLine($"Мы получили случайное число {number}.");
 
             for (int i = 0; i <= number; i++)
             {
-                if (i % 3 == 0 || i % 5 == 0)
+                if (i % multiple1 == 0 || i % multiple2 == 0)
                 sum += i;
             }
             Console.WriteLine($"Полученная сумма по заданию {sum}");
