@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp15
+﻿namespace ConsoleApp15
 {
     internal class Program
     {
@@ -26,6 +20,7 @@ namespace ConsoleApp15
                 if (i % multiple1 == 0 || i % multiple2 == 0)
                 sum += i;
             }
+
             Console.WriteLine($"Полученная сумма по заданию {sum}");
         }
     }
